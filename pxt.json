@@ -1,0 +1,37 @@
+{
+    "name": "Programa_robo",
+    "version": "0.2.3",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.ts",
+        "maqueenplus.ts",
+        "enums.d.ts",
+        "shims.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "6.0.8",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}

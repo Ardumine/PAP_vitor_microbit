@@ -83,7 +83,7 @@ function Mandar_dados_info_Arduino() {
     }
 
 
-    Mandar_dados_Arduino(dados_mandar_raw + Dados_rec_serial_cache.length + ";")
+    Mandar_dados_Arduino(dados_mandar_raw + Dados_rec_serial_cache.length + ";" + (input.buttonIsPressed(Button.B) ? "0" : "1") + ";")
 }
 
 
@@ -307,6 +307,7 @@ bluetooth.onBluetoothDisconnected(function () {
     beep(50);
 
 })
+
 
 
 beep(700)
